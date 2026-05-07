@@ -13,6 +13,19 @@ body {
     background: #646464;
     color: white;
     line-height: 1.6;
+    transition: background 0.3s, color 0.3s
+}
+
+/* Light mode (default */
+body.light {
+    background: white;
+    color: black;
+}
+
+/* Dark mode */
+body.dark {
+    background: #121212;
+    color: white;
 }
 
 /* =========================
@@ -84,6 +97,35 @@ body {
 ========================= */
 
 .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Links
+========================= */
+
+.link {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1rem;
@@ -93,7 +135,7 @@ body {
     text-decoration: none;
 }
 
-.btn:hover {
+.link:hover {
     opacity: 0.8;
 }
 
