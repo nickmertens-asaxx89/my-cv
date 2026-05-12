@@ -70,6 +70,7 @@ body {
 
   .nav-links {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 2rem;
   }
@@ -189,7 +190,7 @@ footer {
    Desktop
 ========================= */
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
