@@ -198,7 +198,7 @@ footer {
 
 @media (max-width: 768px) {
     .nav-links {
-      flex-direction: column;   /* 👈 THIS makes them stack */
+      flex-direction: column;
       gap: 0;
       text-align: center;
     }
